@@ -1,0 +1,14 @@
+<app-header></app-header>
+<section id="adm-view-container" class="container mt-3">
+  <a
+    mat-fab
+    extended
+    color="primary"
+    id="adicionar-produto-button"
+    class="my-2"
+    [routerLink]="'/adm/adiciona-produto'"
+  >
+    <mat-icon>add</mat-icon> Adicionar Produto</a
+  >
+  <app-lista-produtos [excluirHabilitado]="true"></app-lista-produtos>
+</section>

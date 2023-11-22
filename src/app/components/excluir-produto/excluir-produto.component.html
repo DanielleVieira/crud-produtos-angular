@@ -1,0 +1,12 @@
+<section id="excluir-produto-container">
+  <h1 mat-dialog-title>Excluir Produto</h1>
+  <p mat-dialog-content>
+    Tem certeza que gostaria de excluir o produto {{ data.nome }}
+  </p>
+  <div mat-dialog-actions>
+    <button mat-flat-button (click)="cancela()">Cancelar</button>
+    <button mat-flat-button color="primary" (click)="deletaProduto()">
+      Excluir
+    </button>
+  </div>
+</section>

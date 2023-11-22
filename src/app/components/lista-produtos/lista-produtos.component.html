@@ -1,0 +1,53 @@
+<section id="lista-produtos-container" class="container">
+  <section class="row row-cols-auto justify-content-center">
+    <ng-container *ngFor="let produto of produtos.reverse()">
+      <mat-card id="produto-container" class="col m-3">
+        <img
+          mat-card-image
+          [src]="produto.imgUrl"
+          width="300px"
+          height="200px"
+          id="produto-img"
+        />
+        <mat-card-header>
+          <mat-card-title id="produto-preco">{{
+            produto.preco
+          }}</mat-card-title>
+          <mat-card-subtitle id="produto-nome" class="text-primary">{{
+            produto.nome
+          }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <p id="produto-descricao">
+            {{ produto.descricao }}
+          </p>
+          <p>{{ produto.categoria }}</p>
+        </mat-card-content>
+        <mat-card-actions class="mt-auto">
+          <button
+            mat-icon-button
+            color="warn"
+            matTooltip="Excluir"
+            matTooltipPosition="above"
+            id="excluir-produto"
+            *ngIf="excluirHabilitado"
+            (click)="abreDialogDeletaProduto(produto)"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button
+            mat-icon-button
+            color="primary"
+            matTooltip="Editar"
+            matTooltipPosition="above"
+            id="editar produto"
+            (click)="abreDialogEditaProduto(produto)"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </ng-container>
+  </section>
+</section>

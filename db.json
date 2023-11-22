@@ -1,0 +1,108 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "adm@gmail.com",
+      "senha": "123",
+      "nome": "adm",
+      "tipo": "ADM"
+    },
+    {
+      "id": 2,
+      "email": "func@gmail.com",
+      "senha": "123",
+      "nome": "func",
+      "tipo": "FUNC"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Pacote de Aventura na Praia",
+      "preco": 1500,
+      "descricao": "Explore praias paradisíacas e participe de emocionantes atividades aquáticas.",
+      "imgUrl": "https://picsum.photos/300/200?random=1",
+      "categoria": "Praia"
+    },
+    {
+      "id": 2,
+      "nome": "Excursão Histórica",
+      "preco": 1200,
+      "descricao": "Descubra a rica história da região com visitas a monumentos e museus.",
+      "imgUrl": "https://picsum.photos/300/200?random=2",
+      "categoria": "Cultural"
+    },
+    {
+      "id": 3,
+      "nome": "Passeio Gastronômico",
+      "preco": 800,
+      "descricao": "Desfrute da culinária local com degustações em restaurantes renomados.",
+      "imgUrl": "https://picsum.photos/300/200?random=3",
+      "categoria": "Gastronomia"
+    },
+    {
+      "id": 4,
+      "nome": "Retiro na Montanha",
+      "preco": 2000,
+      "descricao": "Relaxe em um refúgio nas montanhas com trilhas e vistas deslumbrantes.",
+      "imgUrl": "https://picsum.photos/300/200?random=4",
+      "categoria": "Montanha"
+    },
+    {
+      "id": 5,
+      "nome": "City Tour Cultural",
+      "preco": 1000,
+      "descricao": "Explore a cultura urbana com passeios por teatros, galerias e bairros históricos.",
+      "imgUrl": "https://picsum.photos/300/200?random=5",
+      "categoria": "Cultural"
+    },
+    {
+      "id": 6,
+      "nome": "Pacote de Lua de Mel",
+      "preco": 2500,
+      "descricao": "Celebre sua lua de mel em um destino romântico com hospedagem de luxo.",
+      "imgUrl": "https://picsum.photos/300/200?random=6",
+      "categoria": "Romântico"
+    },
+    {
+      "id": 7,
+      "nome": "Aventura na Selva",
+      "preco": 1800,
+      "descricao": "Explore a vida selvagem e faça trilhas em uma selva exuberante.",
+      "imgUrl": "https://picsum.photos/300/200?random=7",
+      "categoria": "Aventura"
+    },
+    {
+      "id": 8,
+      "nome": "Viagem de Cruzeiro",
+      "preco": 3000,
+      "descricao": "Navegue pelos mares em um luxuoso cruzeiro com entretenimento a bordo.",
+      "imgUrl": "https://picsum.photos/300/200?random=8",
+      "categoria": "Cruzeiro"
+    },
+    {
+      "id": 9,
+      "nome": "Tour de Vinhos",
+      "preco": 1500,
+      "descricao": "Descubra vinícolas locais e deguste vinhos premiados durante este passeio.",
+      "imgUrl": "https://picsum.photos/300/200?random=9",
+      "categoria": "Enoturismo"
+    },
+    {
+      "id": 10,
+      "nome": "Aventura no Deserto",
+      "preco": 2200,
+      "descricao": "Explore dunas e o deserto em uma experiência única e emocionante.",
+      "imgUrl": "https://picsum.photos/300/200?random=10",
+      "categoria": "Aventura"
+    },
+    {
+      "nome": "Pacote Relaxante",
+      "preco": 1200,
+      "descricao": "Desfrute de momentos tranquilos em destinos paradisíacos.",
+      "categoria": "Relaxamento",
+      "imgUrl": "https://picsum.photos/300/200?random=11",
+      "id": 11
+    }
+  ]
+}

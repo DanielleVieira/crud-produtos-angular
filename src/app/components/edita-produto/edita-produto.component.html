@@ -1,0 +1,42 @@
+<article id="edita-produto-container" class="container pt-5">
+  <h1 mat-dialog-title>Editar Produto</h1>
+  <section mat-dialog-content class="pt-3">
+    <form [formGroup]="form" class="row row-cols-2">
+      <mat-form-field appearance="outline">
+        <mat-label>Nome do produto</mat-label>
+        <input matInput formControlName="nome" name="nome" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Preço</mat-label>
+        <input matInput formControlName="preco" name="preco" type="number" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Categoria</mat-label>
+        <input matInput formControlName="categoria" name="categoria" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Imagem - URL</mat-label>
+        <input matInput formControlName="imgUrl" name="imgUrl" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Descrição</mat-label>
+        <textarea
+          matInput
+          formControlName="descricao"
+          name="descricao"
+        ></textarea>
+      </mat-form-field>
+    </form>
+  </section>
+  <section mat-dialog-actions>
+    <button mat-flat-button class="me-3" (click)="cancela()">Cancelar</button>
+    <button
+      mat-flat-button
+      color="primary"
+      (click)="editaProduto()"
+      [disabled]="form.invalid"
+    >
+      Editar
+    </button>
+  </section>
+</article>

@@ -1,0 +1,26 @@
+#login-container {
+    width: 100%;
+    min-height: 100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(195,45,253,1) 100%);
+}
+
+mat-card {
+    max-width: 25rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    mat-card-header::before {
+        content: "";
+        width: 8rem;
+        height: 8rem;
+        background-image: url("../../../assets/account_circle.png");
+        background-size: cover;
+        filter: invert(100%);
+    }
+}

@@ -1,0 +1,49 @@
+<app-header></app-header>
+<section id="adiciona-produto-container" class="container pt-5">
+  <mat-card>
+    <mat-card-header class="mb-3">
+      <mat-card-title>Adicionar Produto</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="form" class="row row-cols-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Nome do produto</mat-label>
+          <input matInput formControlName="nome" name="nome" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Preço</mat-label>
+          <input matInput formControlName="preco" name="preco" type="number" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Categoria</mat-label>
+          <input matInput formControlName="categoria" name="categoria" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Imagem - URL</mat-label>
+          <input matInput type="url" formControlName="imgUrl" name="imgUrl" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Descrição</mat-label>
+          <textarea
+            matInput
+            formControlName="descricao"
+            name="descricao"
+          ></textarea>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button class="me-3" [routerLink]="'/adm/lista-produtos'">
+        Voltar
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="form.invalid"
+        (click)="salvar()"
+      >
+        Salvar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>

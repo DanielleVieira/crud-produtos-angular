@@ -1,0 +1,7 @@
+mat-card {
+    width: min-content;
+    img {
+        object-fit: cover;
+        background-image: url("../../../assets/placeholder-produto-imagem.png");
+    }
+}
